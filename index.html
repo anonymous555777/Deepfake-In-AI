@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Deepfake in AI — understand synthetic media, spot misinformation, and use AI responsibly.">
+<title>Deepfake in AI | See Beyond the Fake</title>
+<style>
+:root{--bg:#080f20;--panel:#101b32;--panel2:#14223d;--blue:#3985ff;--cyan:#35d7e8;--purple:#9874ff;--text:#f4f7ff;--muted:#a9b7d0;--line:rgba(173,196,235,.16);--good:#46d6a0;--warn:#ffbd69}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.container{width:min(1120px,92%);margin:auto}.nav-wrap{position:sticky;top:0;z-index:20;background:rgba(8,15,32,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.3px}.brand-mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:19px}.brand span:last-child{color:#8db9ff}.nav-links{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--muted)}.nav-links a:hover,.nav-links a.active{color:#fff}.nav-cta,.btn{border:0;border-radius:12px;padding:11px 17px;background:linear-gradient(110deg,var(--blue),#665dff);color:white;font-weight:750;box-shadow:0 8px 24px #2868df33}.menu-btn{display:none;background:transparent;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 11px}.author-credit{margin-left:auto;color:#b9c9e4;font-size:12px;font-weight:750;letter-spacing:.4px;white-space:nowrap}.author-credit span{color:#6fbaff}.hero{position:relative;overflow:hidden;padding:94px 0 78px;background:radial-gradient(ellipse at 78% 30%,#283b8244,transparent 38%),radial-gradient(ellipse at 15% 70%,#126e9d22,transparent 35%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#8edff2;background:#12324a;border:1px solid #24617b;padding:6px 11px;border-radius:99px;font-size:12px;font-weight:750;letter-spacing:.7px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(42px,6vw,70px);line-height:1.06;letter-spacing:-2.7px;margin:22px 0}h1 em{font-style:normal;background:linear-gradient(90deg,#55b7ff,#a18aff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{color:var(--muted);font-size:17px;max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn.secondary{background:transparent;border:1px solid #536887;box-shadow:none}.micro{margin-top:26px;color:#8092b0;font-size:12px;letter-spacing:1.4px;font-weight:700}.hero-art{min-height:350px;position:relative;display:grid;place-items:center}.orbit{width:min(340px,80vw);aspect-ratio:1;border:1px solid #3a6ba866;border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#173a5c88 0%,#101b3288 48%,transparent 70%);box-shadow:0 0 90px #2577ff22}.orbit:before,.orbit:after{content:"";position:absolute;border:1px dashed #57bce866;border-radius:50%;inset:24px}.orbit:after{inset:54px;border-style:solid;border-color:#8d75ff55}.core{width:145px;height:175px;border-radius:48% 48% 42% 42%;background:linear-gradient(145deg,#7ed7f2,#5b75c9 55%,#292c61);position:relative;box-shadow:0 0 50px #4ca8ff77;clip-path:polygon(50% 0,86% 12%,100% 43%,88% 78%,50% 100%,12% 78%,0 43%,14% 12%)}.core:before{content:"";position:absolute;inset:25px 22px 50px;border-radius:50%;background:linear-gradient(90deg,#101d38 48%,#d5f6ff 49%,#172b50 52%);opacity:.9}.float-tag{position:absolute;background:#142746;border:1px solid #4779a966;color:#cdeaff;border-radius:10px;padding:8px 11px;font-size:11px;font-weight:800;box-shadow:0 12px 30px #0005}.tag-a{top:15%;right:0}.tag-b{bottom:14%;left:0}.tag-c{bottom:3%;right:9%}.section{padding:78px 0}.section.alt{background:#0b1529}.section-head{max-width:680px;margin-bottom:34px}.kicker{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}.section h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-1px;margin:10px 0 12px}.section-head p,.muted{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#14233e,#0e192d);border:1px solid var(--line);border-radius:18px;padding:23px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#4a83d477}.icon{width:43px;height:43px;border-radius:13px;background:#1a3960;color:#83dfff;display:grid;place-items:center;font-size:21px;margin-bottom:16px}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.steps{display:grid;gap:13px}.step{display:flex;gap:14px;padding:16px;border:1px solid var(--line);border-radius:14px;background:#111e34}.num{flex:0 0 30px;height:30px;border-radius:9px;background:#1c4776;color:#aeeaff;display:grid;place-items:center;font-weight:800}.step strong{display:block;margin-bottom:3px}.step p{margin:0;color:var(--muted);font-size:13px}.callout{padding:23px;border:1px solid #3d77ae66;border-radius:18px;background:linear-gradient(135deg,#123452,#171d42)}.callout h3{margin:0 0 8px}.callout p{color:#c2d1e9;margin:0;font-size:14px}.warning{border-left:3px solid var(--warn);padding:12px 15px;background:#3b2a183d;color:#e9d2b4;border-radius:0 10px 10px 0;font-size:13px;margin-top:17px}.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.check{padding:15px;border:1px solid var(--line);border-radius:13px;background:#111d32;color:#dce8fb;font-size:14px}.check b{color:var(--cyan);margin-right:7px}.quiz{max-width:760px;background:linear-gradient(145deg,#14233e,#10182d);border:1px solid #5474a244;border-radius:20px;padding:25px}.quiz-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px}.progress{height:6px;background:#263650;border-radius:10px;margin:13px 0 23px;overflow:hidden}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:width .25s}.quiz h3{font-size:20px;margin:0 0 17px}.answers{display:grid;gap:10px}.answer{padding:13px 15px;text-align:left;border-radius:11px;border:1px solid #405574;background:#101d32;color:#e9f1ff}.answer:hover{border-color:var(--cyan)}.answer.selected{border-color:var(--cyan);background:#12354a}.answer.correct{border-color:var(--good);background:#123a35}.answer.wrong{border-color:#ff8c8c;background:#3b202c}.feedback{min-height:28px;color:var(--muted);font-size:13px;margin:13px 0}.quiz-actions{display:flex;justify-content:space-between;align-items:center;gap:12px}.small-btn{border:0;border-radius:10px;padding:10px 15px;background:#2769d8;color:white;font-weight:750}.small-btn:disabled{opacity:.35;cursor:not-allowed}.score{font-size:26px;font-weight:850;color:var(--cyan)}.resource-list{display:grid;gap:11px}.resource{padding:15px 17px;border:1px solid var(--line);border-radius:13px;background:#101c31;display:flex;justify-content:space-between;gap:15px}.resource span{color:var(--muted);font-size:13px}.footer{padding:40px 0;border-top:1px solid var(--line);background:#070d19}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer p{color:#8292ad;font-size:12px;margin:6px 0}.backtop{color:#9bc8ff;font-size:13px}.disclaimer{font-size:12px;color:#8495b1;margin-top:18px}
+@media(max-width:850px){.nav-links{display:none;position:absolute;top:72px;left:0;right:0;padding:18px 4%;background:#0c172b;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-btn{display:block}.nav-cta{display:none}.hero-grid{grid-template-columns:1fr;gap:20px}.hero{padding:65px 0 40px}.hero-art{min-height:290px}.cards{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}}@media(max-width:560px){.cards{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.section{padding:58px 0}h1{letter-spacing:-1.7px}.hero-art{min-height:260px}.orbit{width:260px}.core{width:115px;height:145px}.quiz{padding:18px}.resource{display:block}.resource span{display:block;margin-top:4px}}
+</style>
+</head>
+<body>
+<div class="nav-wrap"><nav class="container">
+  <a class="brand" href="#home"><span class="brand-mark">◈</span><span>DEEPFAKE <span>IN AI</span></span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#how">How It Works</a><a href="#risks">Risks</a><a href="#detect">Detection</a><a href="#ethics">AI Ethics</a><a href="#quiz">Quiz</a>
+  </div>
+  <a class="nav-cta" href="#protect">Stay Informed ↗</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <div class="author-credit">By <span>Rishit</span></div>
+</nav></div>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div><div class="eyebrow"><span class="dot"></span> AI AWARENESS & DIGITAL TRUST</div>
+    <h1>Can You Trust<br>What You <em>See?</em></h1>
+    <p class="lead">AI can create convincing images, videos and voices. Learn what deepfakes are, understand their impact, and build the skills to question digital content responsibly.</p>
+    <div class="actions"><a class="btn" href="#about">Explore Deepfakes →</a><a class="btn secondary" href="#detect">Learn to Verify</a></div>
+    <div class="micro">EDUCATE&nbsp;&nbsp; • &nbsp;&nbsp;IDENTIFY&nbsp;&nbsp; • &nbsp;&nbsp;PROTECT</div>
+  </div>
+  <div class="hero-art" aria-label="Abstract digital AI face illustration"><div class="orbit"><div class="core"></div><span class="float-tag tag-a">AI GENERATED</span><span class="float-tag tag-b">DIGITAL TRUST</span><span class="float-tag tag-c">VERIFY FIRST</span></div></div>
+</div></section>
+<section class="section" id="about"><div class="container">
+  <div class="section-head"><div class="kicker">01 / UNDERSTAND</div><h2>What are deepfakes?</h2><p>Deepfakes are synthetic or altered media created or modified using artificial intelligence. They can make a person appear to say or do something that never happened.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">▧</div><h3>AI-generated images</h3><p>Images can be generated or edited to depict realistic-looking people, places or events that do not exist.</p></article>
+    <article class="card"><div class="icon">▶</div><h3>Manipulated videos</h3><p>Video and face-swap techniques can alter a person's appearance or create misleading scenes.</p></article>
+    <article class="card"><div class="icon">♫</div><h3>Synthetic voices</h3><p>AI voice systems can imitate speech patterns or generate audio that sounds like a real speaker.</p></article>
+  </div>
+</div></section>
+<section class="section alt" id="how"><div class="container">
+  <div class="section-head"><div class="kicker">02 / THE TECHNOLOGY</div><h2>How does it work?</h2><p>Deepfake systems learn patterns from data and use those patterns to generate or modify media. The technology can have creative uses, but it also creates risks when used deceptively.</p></div>
+  <div class="two-col"><div class="steps">
+    <div class="step"><span class="num">1</span><div><strong>Learning patterns</strong><p>AI models learn visual, audio or movement patterns from example data.</p></div></div>
+    <div class="step"><span class="num">2</span><div><strong>Generating or editing</strong><p>A model creates new synthetic content or changes parts of existing media.</p></div></div>
+    <div class="step"><span class="num">3</span><div><strong>Review and refinement</strong><p>The output may be adjusted to look or sound more consistent and realistic.</p></div></div>
+    <div class="step"><span class="num">4</span><div><strong>Sharing and verification</strong><p>Once shared online, context and reliable verification become important.</p></div></div>
+  </div><aside class="callout"><h3>Technology is not automatically good or bad.</h3><p>Its impact depends on the purpose, consent, transparency and safeguards around its use. The same broad AI field can support filmmaking, accessibility and education—or be misused to deceive people.</p><div class="warning">Important: A visual clue or an automated detector cannot prove that a piece of media is fake. Verification should use multiple sources and context.</div></aside></div>
+</div></section>
+<section class="section" id="risks"><div class="container">
+  <div class="section-head"><div class="kicker">03 / RISKS & IMPACT</div><h2>Why should we care?</h2><p>Misleading synthetic media can affect individuals, communities and public trust.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">◉</div><h3>Misinformation</h3><p>Fabricated media can be used to distort events, confuse audiences or spread false claims.</p></article>
+    <article class="card"><div class="icon">♙</div><h3>Identity misuse</h3><p>Someone's likeness or voice may be used without permission, affecting their privacy and reputation.</p></article>
+    <article class="card"><div class="icon">⌁</div><h3>Fraud and impersonation</h3><p>Impersonation can be used in deceptive messages or attempts to gain trust.</p></article>
+    <article class="card"><div class="icon">◎</div><h3>Loss of trust</h3><p>When media can be manipulated, people may become unsure what evidence to believe.</p></article>
+    <article class="card"><div class="icon">♡</div><h3>Personal harm</h3><p>Non-consensual synthetic content can cause serious emotional, social and reputational harm.</p></article>
+    <article class="card"><div class="icon">⚖</div><h3>Ethical challenges</h3><p>Questions arise around consent, accountability, fairness and responsibility.</p></article>
+  </div>
+</div></section>
+<section class="section alt" id="detect"><div class="container">
+  <div class="section-head"><div class="kicker">04 / THINK CRITICALLY</div><h2>How can you verify media?</h2><p>Do not rely on one visual detail. Use a careful, evidence-based process before believing or sharing surprising content.</p></div>
+  <div class="checklist">
+    <div class="check"><b>01</b> Check the original source and who published it.</div>
+    <div class="check"><b>02</b> Look for independent, reputable reporting of the same event.</div>
+    <div class="check"><b>03</b> Check the date, location and surrounding context.</div>
+    <div class="check"><b>04</b> Notice unusual audio, lighting or visual inconsistencies—but treat them only as clues.</div>
+    <div class="check"><b>05</b> Use reverse-image search or trusted fact-checking resources where appropriate.</div>
+    <div class="check"><b>06</b> Treat AI detector results cautiously; tools can make mistakes.</div>
+  </div>
+  <p class="disclaimer">A detector score is not a verdict. Compression, editing and low-quality recordings can affect results, and authentic media can be incorrectly flagged.</p>
+</div></section>
+<section class="section" id="protect"><div class="container">
+  <div class="section-head"><div class="kicker">05 / PREVENTION</div><h2>Pause. Verify. Protect.</h2><p>Small habits can reduce the spread and impact of deceptive content.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">✓</div><h3>Verify before sharing</h3><p>Check the source and context before forwarding emotionally charged or surprising media.</p></article>
+    <article class="card"><div class="icon">⌑</div><h3>Protect personal data</h3><p>Think carefully before posting sensitive photos, recordings or identifying information publicly.</p></article>
+    <article class="card"><div class="icon">⚑</div><h3>Report harmful content</h3><p>Use the platform's reporting tools. If someone is targeted, seek help from a trusted adult or appropriate authority.</p></article>
+  </div>
+  <div class="callout" style="margin-top:18px"><h3>Received a suspicious request?</h3><p>Do not rely only on a familiar voice or video call. Verify through a separate, trusted contact method before taking action or sharing private information.</p></div>
+</div></section>
+<section class="section alt" id="ethics"><div class="container">
+  <div class="section-head"><div class="kicker">06 / RESPONSIBLE AI</div><h2>Ethics must come first.</h2><p>Responsible AI use respects people, communicates honestly and includes safeguards against foreseeable harm.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">♡</div><h3>Consent</h3><p>Obtain permission before using someone's face, voice or personal data in synthetic media.</p></article>
+    <article class="card"><div class="icon">◇</div><h3>Transparency</h3><p>Clearly label AI-generated or significantly altered media when people could mistake it for reality.</p></article>
+    <article class="card"><div class="icon">⚖</div><h3>Accountability</h3><p>People and organisations should take responsibility for how AI systems and outputs are used.</p></article>
+    <article class="card"><div class="icon">▣</div><h3>Privacy</h3><p>Handle personal information carefully and avoid collecting or exposing data unnecessarily.</p></article>
+    <article class="card"><div class="icon">◎</div><h3>Fairness</h3><p>Consider who may be disproportionately harmed and make systems more inclusive.</p></article>
+    <article class="card"><div class="icon">盾</div><h3>Safety</h3><p>Build review, reporting and response processes to reduce misuse and address harm.</p></article>
+  </div>
+</div></section>
+<section class="section" id="quiz"><div class="container">
+  <div class="section-head"><div class="kicker">07 / TEST YOUR KNOWLEDGE</div><h2>Deepfake awareness quiz</h2><p>Answer these quick questions to check what you have learned.</p></div>
+  <div class="quiz" id="quizBox">
+    <div class="quiz-top"><span id="questionCount">Question 1 of 5</span><span>Knowledge check</span></div>
+    <div class="progress"><span id="progressBar"></span></div>
+    <h3 id="question">What is a deepfake?</h3>
+    <div class="answers" id="answers"></div>
+    <div class="feedback" id="feedback" aria-live="polite"></div>
+    <div class="quiz-actions"><span id="scoreLabel" class="muted">Your score: 0</span><button class="small-btn" id="nextBtn" disabled>Next question →</button></div>
+  </div>
+</div></section>
+<section class="section alt" id="resources"><div class="container">
+  <div class="section-head"><div class="kicker">08 / LEARN MORE</div><h2>Explore trusted resources</h2><p>Use reliable educational and official sources to continue learning about online safety, misinformation and responsible AI.</p></div>
+  <div class="resource-list">
+    <a class="resource" href="https://www.unesco.org/en/artificial-intelligence" target="_blank" rel="noopener"><div><strong>UNESCO – Artificial Intelligence</strong><br><span>Ethics, policy and responsible AI resources</span></div><b>↗</b></a>
+    <a class="resource" href="https://www.meity.gov.in/" target="_blank" rel="noopener"><div><strong>Ministry of Electronics and IT (India)</strong><br><span>Official digital and technology policy information</span></div><b>↗</b></a>
+    <a class="resource" href="https://www.cybercrime.gov.in/" target="_blank" rel="noopener"><div><strong>National Cyber Crime Reporting Portal</strong><br><span>Official portal for reporting cybercrime in India</span></div><b>↗</b></a>
+    <a class="resource" href="https://www.pib.gov.in/" target="_blank" rel="noopener"><div><strong>Press Information Bureau</strong><br><span>Official government updates and fact-check information</span></div><b>↗</b></a>
+  </div>
+</div></section>
+</main>
+<footer class="footer"><div class="container footer-inner">
+  <div><a class="brand" href="#home"><span class="brand-mark">◈</span><span>DEEPFAKE <span>IN AI</span></span></a><p>See Beyond the Fake. Discover the Truth.</p></div>
+  <div><p>An educational AI Ethics awareness project.</p><p>Learn responsibly. Verify thoughtfully. Share carefully.</p></div>
+  <a class="backtop" href="#home">Back to top ↑</a>
+</div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+const questions=[
+ {q:"What is a deepfake?",a:["A type of computer hardware","AI-generated or altered media that can imitate reality","A secure password"],c:1,e:"Deepfakes are synthetic or altered media created or modified using AI."},
+ {q:"Can an AI detector always prove that a video is fake?",a:["Yes, every time","Only for videos shared online","No, detectors can make mistakes"],c:2,e:"Detector results are estimates and should be checked alongside reliable evidence."},
+ {q:"What should you do before sharing a surprising video?",a:["Verify its source and context","Forward it immediately","Assume it is genuine"],c:0,e:"Check the source, date, context and independent reporting before sharing."},
+ {q:"Which is an important principle of responsible synthetic media?",a:["Using anyone's face without asking","Consent and transparency","Hiding that content was AI-generated"],c:1,e:"Consent and transparency help protect people's rights and trust."},
+ {q:"What is a sensible response to a suspicious voice message asking for urgent action?",a:["Act immediately","Share personal information","Verify through a separate trusted contact method"],c:2,e:"Use a separate trusted channel to confirm the request before acting."}
+];
+let index=0,score=0,answered=false;
+const qEl=document.getElementById('question'),aEl=document.getElementById('answers'),fEl=document.getElementById('feedback'),next=document.getElementById('nextBtn'),count=document.getElementById('questionCount'),bar=document.getElementById('progressBar'),scoreLabel=document.getElementById('scoreLabel');
+function render(){answered=false;const q=questions[index];count.textContent=`Question ${index+1} of ${questions.length}`;bar.style.width=`${index/questions.length*100}%`;qEl.textContent=q.q;fEl.textContent='';aEl.innerHTML='';next.disabled=true;next.textContent=index===questions.length-1?'See results →':'Next question →';q.a.forEach((answer,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=answer;b.addEventListener('click',()=>choose(i,b));aEl.appendChild(b)});scoreLabel.textContent=`Your score: ${score}`}
+function choose(choice,button){if(answered)return;answered=true;const q=questions[index];const buttons=[...aEl.children];buttons.forEach((b,i)=>{b.disabled=true;if(i===q.c)b.classList.add('correct')});if(choice===q.c){score++;fEl.textContent='Correct! '+q.e}else{button.classList.add('wrong');fEl.textContent='Not quite. '+q.e}scoreLabel.textContent=`Your score: ${score}`;next.disabled=false;bar.style.width=`${(index+1)/questions.length*100}%`}
+next.addEventListener('click',()=>{if(!answered)return;if(index<questions.length-1){index++;render()}else{showResults()}});
+function showResults(){count.textContent='Quiz completed';bar.style.width='100%';qEl.textContent='You completed the awareness quiz!';aEl.innerHTML=`<div class="callout"><div class="score">${score} / ${questions.length}</div><strong>${score===5?'Excellent work!':score>=3?'Good effort!':'Keep learning!'}</strong><p style="margin-top:8px">Understanding deepfakes starts with curiosity, careful verification and responsible sharing.</p></div>`;fEl.textContent='';next.textContent='Try again ↻';next.disabled=false;next.onclick=()=>{index=0;score=0;next.onclick=null;render()};scoreLabel.textContent='Final score'}
+render();
+</script>
+</body></html>
